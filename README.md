@@ -1,5 +1,6 @@
 # TeamProject
-Team Memebers:
+Team Members:
+
 1. Kevin Nguyen
 2. Prince Antwi
 3. Noel
