@@ -21,12 +21,12 @@ Mitigation Strategy: Planning out the project accordingly, and giving each team 
 
 User Stories:
 
-1. As a student I want a interactive map of campus so that I can find my classes more efficiently.
+1. As a student I want a interactive map of campus so that I can locate my classes easily.
 2. As the developer I want to create this app so that life on campus for new students, and visitors will be easier.
-3. As a student would like 
-4. As a professor 
-5. As a visiting prospetive student, 
-6. 
+3. As a student I would like to know the walking time from my location to my next campus destination 
+4. As a student I would like to be able to see the time while I use the app to allow me to navigate campus more effiently.  
+5. As a student I would like to set a timer that reminds me when I should start walking to class based on my current location.
+6. As a teammember I would like to be able to share a location.  
 
 Methodology: Agile
 
