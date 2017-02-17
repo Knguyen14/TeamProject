@@ -30,4 +30,6 @@ User Stories:
 
 Methodology: Agile
 
-Project Tracking Software: Github Issues and Milestones 
+Project Tracking Software: Trello
+Link to Trello:https://trello.com/b/JCdq69Wi/c-u-there
+  
