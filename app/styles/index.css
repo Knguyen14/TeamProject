@@ -15,8 +15,8 @@ body {
 
 header {
   padding: 115px 0 32px 0;
-  background-color: #00bcd4;
-  color: white;
+  background-color: #000000;
+  color: #e2d50b;
 }
 
 main, header > h1 {

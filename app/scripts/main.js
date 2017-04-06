@@ -100,9 +100,9 @@ function updateBtn() {
   }
 
   if (isSubscribed) {
-    pushButton.textContent = 'Disable Push Messaging';
+    pushButton.textContent = 'Disable Push Notifications';
   } else {
-    pushButton.textContent = 'Enable Push Messaging';
+    pushButton.textContent = 'Enable Push Notifications';
   }
 
   pushButton.disabled = false;
