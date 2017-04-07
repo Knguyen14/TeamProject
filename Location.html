@@ -59,9 +59,26 @@
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoidmlrYTUxODYiLCJhIjoiY2l6cnQ0aHNqMDBjdTMycGNneTdvaWN3bSJ9.QPqOCcSpyB3Ef4NO9Eg8BA';
+
 var map = L.mapbox.map('map', 'mapbox.streets', {
     zoomControl: false
-}).setView([40.0076, -105.2659], 17);
+});
+
+//finds current location
+map.locate({setView: true, maxZoom: 17});
+
+//creates pop up on user location
+function onLocationFound(e) {
+    var radius = e.accuracy / 2;
+
+    L.marker(e.latlng).addTo(map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+    L.circle(e.latlng, radius).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
+
 // move the attribution control out of the way
 map.attributionControl.setPosition('bottomleft');
 // create the initial directions object, from which the layer
