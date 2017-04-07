@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,13 +22,11 @@
     max-width: 300px;
     min-width: 200px;
 }
-
 #inputs {
     z-index: 10;
     top: 10px;
     left: 10px;
 }
-
 #directions {
     z-index: 99;
     background: rgba(0,0,0,.8);
@@ -36,7 +35,6 @@
     bottom: 0;
     overflow: auto;
 }
-
 #errors {
     z-index: 8;
     opacity: 0;
@@ -46,7 +44,6 @@
     top: 90px;
     left: 10px;
 }
-
 </style>
 
 
@@ -58,42 +55,51 @@
 <div id='inputs'></div>
 <div id='errors'></div>
 <div id='directions'>
-  <div id='routes'></div>
-  <div id='instructions'></div>
+<div id='routes'></div>
+<div id='instructions'></div>
+<div id='routes'></div>
+<div id='instructions'></div>
 
 
 <script>
-
 L.mapbox.accessToken = 'pk.eyJ1IjoidmlrYTUxODYiLCJhIjoiY2l6cnQ0aHNqMDBjdTMycGNneTdvaWN3bSJ9.QPqOCcSpyB3Ef4NO9Eg8BA';
 
 var map = L.mapbox.map('map', 'mapbox.streets', {
     zoomControl: false
-}).setView([40.0076, -105.2659], 17);
+});
+
+//finds current location
+map.locate({setView: true, maxZoom: 17});
+
+//creates pop up on user location
+function onLocationFound(e) {
+    var radius = e.accuracy / 2;
+
+    L.marker(e.latlng).addTo(map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+    L.circle(e.latlng, radius).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
 
 // move the attribution control out of the way
 map.attributionControl.setPosition('bottomleft');
-
 // create the initial directions object, from which the layer
 // and inputs will pull data.
 var directions = L.mapbox.directions({
     profile: 'mapbox.walking'
 });
-
 var directionsLayer = L.mapbox.directions.layer(directions)
     .addTo(map);
-
 var directionsInputControl = L.mapbox.directions.inputControl('inputs', directions)
     .addTo(map);
-
 var directionsErrorsControl = L.mapbox.directions.errorsControl('errors', directions)
     .addTo(map);
-
 var directionsRoutesControl = L.mapbox.directions.routesControl('routes', directions)
     .addTo(map);
-
 var directionsInstructionsControl = L.mapbox.directions.instructionsControl('instructions', directions)
     .addTo(map);
-
 </script>
 </body>
 </html>
