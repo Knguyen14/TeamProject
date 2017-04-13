@@ -43,6 +43,6 @@ self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('http://127.0.0.1:8000/TeamProject/Location.html')
+    clients.openWindow('http://127.0.0.1:8000/Location.html')
   );
 });
