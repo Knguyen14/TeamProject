@@ -80,6 +80,27 @@ a {
 
 }
 
+
+#title1 {
+    font-size: 200%;
+    font-family: Arial;
+    background: gold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#intro1 {
+    align-content: center;
+    font-size: 16px;
+    padding: 20px;
+    font-family: cursive;
+    background: whitesmoke;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 25%;
+
+}
+
 #menu2 {
     clear: both;
     color: white;
@@ -98,5 +119,41 @@ a {
     margin-top: 1%;
     float: right;
     padding-right: 15px;
+}
+
+input[type = text], select {
+    width: auto;
+    padding: inherit;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: darkgoldenrod;
+}
+
+input[type = submit]{
+    width: auto;
+    background-color: green;
+    color: white;
+    padding: inherit;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type = submit]:hover {
+    background-color: #45a049;
+
+}
+
+.class {
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color:currentColor;
+    padding: inherit;
+}
+fieldset {
+    border: none;
 }
 
