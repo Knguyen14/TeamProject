@@ -82,7 +82,7 @@ a {
 
 
 #title1 {
-    font-size: 200%;
+    font-size: 175%;
     font-family: Arial;
     background: gold;
     margin-top: 20px;
@@ -115,16 +115,11 @@ a {
     font-size: 90%;
 }
 
-#completion {
-    margin-top: 1%;
-    float: right;
-    padding-right: 15px;
-}
 
 input[type = text], select {
     width: auto;
     padding: inherit;
-    margin: 10px;
+    margin: 5px;
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
@@ -144,15 +139,8 @@ input[type = submit]{
 
 input[type = submit]:hover {
     background-color: #45a049;
-
 }
 
-.class {
-    border-radius: 5px;
-    margin-top: 5px;
-    background-color:currentColor;
-    padding: inherit;
-}
 fieldset {
     border: none;
 }
