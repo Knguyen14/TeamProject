@@ -15,16 +15,13 @@
 
   <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.js'></script>
   <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.css' type='text/css' />
+
   <div id='map' ></div>
+  <div id='directions'></div>
+
 
   <script>
-    // navigator.geolocation.watchPosition(render);
 
-    // function render(position){
-    //   var lat = pos.coords.latitude;
-    //   var lon = pos.coords.longitude;
-
-    // }
     mapboxgl.accessToken = 'pk.eyJ1IjoidmlrYTUxODYiLCJhIjoiY2l6cnQ0aHNqMDBjdTMycGNneTdvaWN3bSJ9.QPqOCcSpyB3Ef4NO9Eg8BA';
     var map = new mapboxgl.Map({
       container: 'map',
@@ -32,28 +29,31 @@
       center: [-105.2659, 40.0076], // starting position
       zoom: 15 // starting zoom
     });
+
     var geoLocate = new mapboxgl.GeolocateControl();
     map.addControl(geoLocate);
     geoLocate.on('geolocate', function(e) {
       console.log('geolocated');
       map.setZoom(8);
     });
-    //Add zoom and rotation controls to the map
-    // map.addControl(new mapboxgl.GeolocateControl( {
-    //   positionOptions: {
-    //     enableHighAccuracy: true
-    //   }
-    // }));
+
     map.addControl(new mapboxgl.NavigationControl());
-    // map.addControl(new MapboxGeocoder({
-    //   accessToken: mapboxgl.accessToken
-    // }));
-    //Add geolocate control to map
 
     //Add walking directions
     map.addControl(new MapboxDirections({
-      accessToken: mapboxgl.accessToken
+      accessToken: mapboxgl.accessToken,
+      profile: 'walking',
+      container: 'directions'
     }), 'top-left');
+
+    // map.on('load', function(e) {
+    //   directions.setOrigin(geoLocate);
+    // });
+
+    // directions.on('route', function(e) {
+    //   console.log(geoLocate);
+    // });
+
   </script>
 </body>
 </html>
