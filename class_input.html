@@ -1,0 +1,85 @@
+CTYPE html>
+
+<html>
+<style>
+    input[type = text], select {
+        width: auto;
+        padding: inherit;
+        margin: auto;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: darkgoldenrod;
+    }
+    
+    input[type = submit]{
+        width: auto;
+        background-color: green;
+        color: white;
+        padding: inherit;
+        margin: auto;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type = submit]: hover {
+        background-color: #45a049; 
+    }
+    
+    div {
+        border-radius: 5px;
+        background-color:currentColor;
+        padding: inherit;
+    }
+    
+</style>
+<body>
+    <h3>Go Ahead And Put Your Class Schedule! </h3>
+    <div> 
+<form action= "/action_page.php">
+    <fieldset>
+        <legend>Class Schedule: </legend>
+    First class you probably won't go to: <br>
+    <input type= "text"
+           1st class= "class" value= "First Class">
+    <br>
+    Second class you probably won't go to:<br>
+    <input type= "text" 
+           2nd class = "class" value = "Second Class">
+    <br> 
+    Third class you probably won't go to:
+    <br>
+    <input type = "text"
+           3rd class = "class" value = "Third Class">
+    <br>
+    Fourth class ypu probably won't go to:
+    <br> 
+    <input type = "text"
+           4th class = "class" value = "Fourth Class ">
+    <br>
+    Fifth class you probably won't go to:
+    <br> 
+    <input type = "text"
+           5th class = "class" value = "Fifth Class ">
+    <br> 
+    Sixth class you probably won't go to:
+    <br> 
+    <input type = "text"
+           6th class = "class" value = "Sixth Class ">
+    <br> 
+    Seventh class you probably won't go to:
+    <br> 
+    <input type = "text"
+           7th class = "class" value = "Seventh Class ">
+    <br> <br> 
+    <input type = "submit"
+           value = "Submit">
+        </fieldset>
+    </form>    
+    <p>Click the submit button to Save and Submit your schedule.</p>
+</div>
+</body>
+   
+</html>
+
