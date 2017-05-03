@@ -64,8 +64,8 @@ a {
     font-size: 300%;
     font-family: Arial;
     background: gold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #intro {
@@ -74,9 +74,8 @@ a {
     padding: 20px;
     font-family: cursive;
     background: whitesmoke;
-    width: 50%;
-    margin-bottom: 15px;
-    margin-left: 25%;
+    width: 60%;
+    margin: 0 auto;
 
 }
 
@@ -85,8 +84,8 @@ a {
     font-size: 175%;
     font-family: Arial;
     background: gold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #intro1 {
@@ -95,9 +94,8 @@ a {
     padding: 20px;
     font-family: cursive;
     background: whitesmoke;
-    width: 50%;
-    margin-bottom: 15px;
-    margin-left: 25%;
+    width: 65%;
+    margin: 0 auto;
 
 }
 
@@ -118,28 +116,34 @@ a {
 
 input[type = text], select {
     width: auto;
+    font-size: 16px;
     padding: inherit;
-    margin: 5px;
+    -webkit-align-content: center;
+    align-content: center;
+    margin-bottom: 10px;
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: darkgoldenrod;
+    margin-left: 6%;
 }
 
 input[type = submit]{
-    width: auto;
     background-color: green;
     color: white;
-    padding: inherit;
-    margin-left: 10px;
+    padding: 15px 20px 15px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 40%;
 }
 
 input[type = submit]:hover {
     background-color: #45a049;
 }
+
+
+
 
 fieldset {
     border: none;
