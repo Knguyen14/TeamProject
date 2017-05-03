@@ -1,7 +1,7 @@
   <? php
     $host = "localhost";
-    $user = "root";
-    $password = "Theanswer14";
+    $user = "newuser";
+    $password = "password";
     $database = "project";
  
 mysql_connect($host,$user,$password);
