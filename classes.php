@@ -22,7 +22,7 @@ $E5 = 'e_hour5':'e_minutes' ['e_timeperiod5'];
 
 <html>
 <body>
-echo $C1,$C2,$C3,$C4,$C5;
+echo $C1,$T1,E1,$C2,$T2,$E2,$C3,$T3,$E3,$C4,$T4,$E4,$C5,$T5,$E5;
 
 </body>
 </html>
