@@ -5,25 +5,20 @@ if (!connect) {
 	mysql_select_db(“project”, $connect); 
 
 $C1 = $_POST['class1'];
-$T1 = $_POST['time1'];
-//$T1 = $_POST['start_time1'];
-//$E1 = $_POST['end_time1'];
+$T1 = 's_hour1':'s_minute1' ['s_timeperiod1'];
+$E1 = 'e_hour1':'e_minute1' ['e_timeperiod1'];
 $C2 = $_POST['class2'];
-$T2 = $_POST['time2'];
-//$T2 = $_POST['start_time2'];
-//$E2 = $_POST['end_time2'];
+$T2 = 's_hour2':'s_minute2' ['s_timeperiod2'];
+$E2 = 'e_hour2':'e_minute2' ['e_timeperiod2'];
 $C3 = $_POST['class3'];
-$T3 = $_POST['time3'];
-//$T3 = $_POST['start_time3'];
-//$E3 = $_POST['end_time3'];
+$T3 = 's_hour3':'s_minute3' ['s_timeperiod3'];
+$E3 = 'e_hour3':'e_minute3' ['e_timeperiod3'];
 $C4 = $_POST['class4'];
-$T4 = $_POST['time4'];
-//$T4 = $_POST['start_time4'];
-//$E4 = $_POST['end_time4'];
+$T4 = 's_hour4':'s_minute4' ['s_timeperiod4'];
+$E4 = 'e_hour4':'e_minute4' ['e_timeperiod4'];
 $C5 = $_POST['class5'];
-$T5 = $_POST['time5'];
-//$T5 = $_POST['start_time5'];
-//$E5 = $_POST['end_time5'];
+$T5 = 's_hour5':'s_minute5' ['s_timeperiod5'];
+$E5 = 'e_hour5':'e_minutes' ['e_timeperiod5'];
 
 <html>
 <body>
