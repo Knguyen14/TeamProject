@@ -64,8 +64,8 @@ a {
     font-size: 300%;
     font-family: Arial;
     background: gold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #intro {
@@ -75,7 +75,7 @@ a {
     font-family: cursive;
     background: whitesmoke;
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-left: 25%;
 
 }
@@ -85,8 +85,8 @@ a {
     font-size: 175%;
     font-family: Arial;
     background: gold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #intro1 {
@@ -96,7 +96,7 @@ a {
     font-family: cursive;
     background: whitesmoke;
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-left: 25%;
 
 }
