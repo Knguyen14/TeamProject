@@ -1,5 +1,5 @@
 <?php 
-$connect = mysql_connect(“localhost”, “root”, “Theanswer14”);
+$connect = mysql_connect(“localhost”, “newuser”, “password”);
 if (!connect) { 
 	die('Connection Failed: ' . mysql_error());{ 
 	mysql_select_db(“project”, $connect); 
