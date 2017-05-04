@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <!-- <script type="text/javascript" src="js/bootstrap.min.css"></script> -->
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+    </script>
+    <script>
+        function checkPass()
+        {
+            //Store the password field objects into variables ...
+            var pass1 = document.getElementById('pass1');
+            var pass2 = document.getElementById('pass2');
+            //Store the Confimation Message Object ...
+            var message = document.getElementById('confirmMessage');
+            //Set the colors we will be using ...
+            var goodColor = "#66cc66";
+            var badColor = "#ff6666";
+            //Compare the values in the password field
+            //and the confirmation field
+            if(pass1.value == pass2.value){
+                //The passwords match.
+                //Set the color to the good color and inform
+                //the user that they have entered the correct password
+                pass2.style.backgroundColor = goodColor;
+                message.style.color = goodColor;
+            }else{
+                //The passwords do not match.
+                //Set the color to the bad color and
+                //notify the user.
+                pass2.style.backgroundColor = badColor;
+                message.style.color = badColor;
+            }
+        }
+    </script>
+
+</head>
+
+<body id="background">
+<div id="header">
+    <div id="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo" style="width:45px; height: 45px;"></a>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html"><i>Home</i></a></li>
+            <li><a href="classes.html"><i>Add Classes</i></a></li>
+            <li><a href="team.html"><i>Meet the Team</i></a></li>
+            <li> <div class="dropdown">
+                <button class="dropbtn"><i>Join</i></button>
+                <div class="dropdown-content">
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign up</a>
+                </div>
+            </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div id="details">
+    <div id="title">
+        <h1 style="text-align: center"><b style="color: black">BuffNav</b></h1>
+    </div>
+    <div id="intro">
+        <div class="login-page">
+            <div class="form">
+                <form class="login-form">
+                    <input type="text" placeholder="first name"/>
+                    <input type="text" placeholder="last name"/>
+                    <input type="text" placeholder="email"/>
+                    <input type="text" placeholder="username"/>
+                    <form>
+                        <div class="fieldWrapper">
+                            <input type="password" name="pass1" id="pass1" placeholder="password">
+                        </div>
+                        <div class="fieldWrapper">
+                            <input type="password" name="pass2" id="pass2" placeholder="re-enter password" onkeyup="checkPass(); return false;">
+                            <span id="confirmMessage" class="confirmMessage"></span>
+                        </div>
+                    </form>
+                    <button><a href="classes.html" style="color: #ffffff;">Sign up</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
