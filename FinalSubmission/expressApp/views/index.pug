@@ -1,0 +1,48 @@
+doctype html
+html
+  head(lang='en')
+    meta(charset='UTF-8')
+    title Welcome Page
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    script(type='text/javascript', src='js/bootstrap.min.css')
+  body#background
+    #header
+      #logo
+        a(href='index.html')
+          img(src='images/logo.png', alt='logo', style='width:45px; height: 45px;')
+      #menu
+        ul
+          li
+            a(href='index.html')
+              i Home
+          li
+            a(href='/login')
+              i Login
+          li
+            a(href='team.html')
+              i Meet the Team
+    #details
+      #title
+        h1(style='text-align: center')
+          b(style='color: black')  BuffNav 
+      #intro
+        p(style='text-align: center')
+          | Getting to class on time or locating buildings when you have class five minutes isn&apos;t a easy . After adding class times and locations this app will send you a notification when to start walking to class. Whether you are a newcomer trying to find buildings or a returning student who want to be sure you will be on time for class no matter where you are, BuffNav is here to help. To create an account or log in click the link!
+          a(href='/login', style='color: gold')
+            b Login
+          |  or 
+          a(href='#', style='color: gold')
+            b Sign up
+
+  p  If you have already logged and and been redirected to this page, please click the dashboard link
+    a(href='/dashboard') Dashboard
+
+
+
+
+
+
+
+
+
+
